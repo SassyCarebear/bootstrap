@@ -1,0 +1,172 @@
+/*
+    Author:   Cara Jones
+    Date:     July 24, 2022
+    Project:  Bootstrap B&B
+    File:     styles.css
+*/
+:root{
+  --shadow: 5px 5px 15px 8px grey;
+}
+html{
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body{
+  margin: 20px 80px;
+}
+.mainHead{
+  text-align: center;
+  margin: 20px 50px;
+}
+.fa-solid{
+  margin: 0px 2px 0px 50px;
+}
+h1, h2{
+  color: #3377ff;
+  font-size: 4em;
+  font-weight: bold;
+  font-family: 'Edu TAS Beginner', cursive;
+  text-align: center;
+}
+
+.description{
+  margin: 40px 80px 0px 50px;
+  text-align: center;
+}
+.small{
+  color: #6699ff;
+}
+
+
+.carousel{
+  width: 80%;
+  margin: 40px 0px 40px 0px;
+  margin-left: 10%;
+  box-shadow: var(--shadow);
+}
+.cardpics{
+  display: grid;
+  grid-column-gap: 10px;
+  width: 100%;
+    grid-template-rows:
+  'card1', 'card2', 'card3';
+}
+.card-title{
+  color: #3377ff;
+  font-weight: bold;
+  font-family: 'Edu TAS Beginner', cursive;
+  text-align: center;
+}
+.card{
+  margin: 10px;
+  box-shadow: var(--shadow);
+  min-width:250px;
+}
+.card1{
+  grid-row: card1;
+}
+.card2{
+  grid-row: card2;
+}
+.card3{
+  grid-row: card3;
+}
+.amenities-container{
+  margin: 40px 25px;
+  border: 2px solid #6699ff;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+.amenities{
+  margin: 20px 0px;
+  display:grid;
+  grid-column-gap: 10px;
+  width: 100%;
+  grid-template-rows:
+  'col1', 'col2', 'col3', 'col4'
+}
+.col1{
+  grid-row: col1;
+  min-width: 120px;
+}
+.col2{
+  grid-row: col2;
+  min-width: 120px;
+}
+.col3{
+  grid-row: col3;
+  min-width: 120px;
+}
+.col4{
+  grid-row: col4;
+  min-width: 120px;
+}
+.contact{
+  display: grid;
+  grid-gap: 40px;
+  width: 100%;
+  margin: 50px;
+  grid-template-rows:
+  'form', 'map';
+
+}
+.contact-form{
+  grid-row: form;
+  margin: 10px;
+  min-width: 380px;
+  }
+.map{
+  grid-row: map;
+  margin: 10px 30px;
+  min-width: 250px;
+  box-shadow: var(--shadow);
+}
+footer{
+  position: sticky;
+  bottom: 0px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  padding: 5px;
+  background-color: white;
+
+}
+@media screen and (max-width:940px){
+  body{
+    margin: 10px 20px;
+  }
+  .contact{
+    display: block;
+    margin:20px;
+  }
+  .contact-form{
+    margin: 30px;
+
+  }
+  .mainHead{
+    text-align: center;
+    margin: 20px 20px;
+  }
+  h1, h2{
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .description{
+    margin: 0px;
+  }
+  .carousel{
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    box-shadow: var(--shadow);
+  }
+  .cardpics{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .amenities{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
